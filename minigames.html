@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TheLeCraft999 - Minigames</title>
+</head>
+<body>
+    <div class="head">
+        <nav class="nav">
+                <h2 id="home"><a href="index.html">Home</a></h2>
+                <h2 id="minigames" onclick="alert('Site successfully reloaded!')"><a href="">Minigames</a></h2>
+                <h2 id="projekte"><a href="">Projekte</a></h2>
+            <img id="togglemode" src="images/moon.png" alt="moon">
+        </nav>
+    </div>
+    <div class="main">
+        <h1>Minigames</h1>
+
+        </nav>
+    </div>
+</body>
+<script>
+    var togglemode = document.getElementById('togglemode')
+
+    togglemode.onclick = function() {
+        document.body.classList.toggle('darktheme')
+        if(document.body.classList.contains('darktheme')) {
+            togglemode.src = 'images/sun.png'
+        }else{
+            togglemode.src = 'images/moon.png'
+        }}
+</script>
+<style>
+.main h1 {
+    text-decoration: underline;
+    text-align: center;
+    color: var(--secondary_color);
+}
+
+.nav {
+    text-align: right;
+    flex: 1;
+}
+
+.nav #home{
+    display: inline-block;
+}
+
+.nav #home a {
+    color: var(--secondary_color);
+    text-decoration: none;
+}
+
+.nav #minigames{
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav #minigames a{
+    color: var(--secondary_color);
+    text-decoration: none;
+}
+
+.nav #projekte {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.nav #projekte a{
+    color: var(--secondary_color);
+    text-decoration: none;
+}
+
+.nav #togglemode {
+    display: inline-flex;
+    align-items: center;
+    width: 50px;
+    cursor: pointer;
+    margin-left: 100px;
+}  
+body {
+    background-color: var(--primary_color);
+}
+
+:root{
+    --primary_color: #fff;
+    --secondary_color: #000000;
+}
+
+.darktheme {
+    --primary_color: #222222;
+    --secondary_color: #fff ;
+}
+
+</style>
+</html>
