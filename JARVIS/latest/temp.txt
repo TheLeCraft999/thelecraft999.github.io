@@ -1,0 +1,11 @@
+PyAudio
+SpeechRecognition
+Pyttsx3
+Pvporcupine=1.9.5
+Art
+HuggingfaceHub
+Pyllamacpp
+Pyperclip
+Pyautogui
+BS4
+opencv-python
