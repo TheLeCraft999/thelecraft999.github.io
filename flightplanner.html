@@ -231,7 +231,7 @@
             const colorCodes = ["BLU+", "BLU++", "BLU", "WHT", "GRN", "YLO", "AMB", "RED"];
             for (const part of parts) {
                 if (colorCodes.includes(part)) {
-                    return part;
+                    return part.replace("+","_");
                 }
             }
             return "UNKN";
