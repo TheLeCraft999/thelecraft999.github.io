@@ -48,7 +48,8 @@
             color: rgb(71, 89, 208);
         }
         .jarvis,
-        .discord-bot {
+        .discord-bot,
+        .flightplanner {
         background-color: rgb(44, 44, 44);
         border-radius: 10px;
         padding: 10px;
@@ -59,37 +60,44 @@
         flex: 1;
         display: inline-block;
         }
-        .discord-bot {
+        .discord-bot,
+        .flightplanner {
         margin-left: auto;
         }
-        .jarvis {
+        .jarvis,
+        .discord-bot {
         margin-right: 20px;
         }
         .jarvis-content,
-        .discord-bot-content {
+        .discord-bot-content,
+        .flightplanner-content {
             display: flex;
             align-items: center;
         }
         .jarvis-image,
-        .discord-bot-image {
+        .discord-bot-image,
+        .flightplanner-image {
             max-width: auto;
             height: 100px;
             margin-right: 10px;
         }
         .jarvis p,
-        .discord-bot p {
+        .discord-bot p,
+        .flightplanner p {
             color: white;
             font-family: 'Roboto', sans-serif;
             margin: 0;
             flex-grow: 1;
         }
         .jarvis-actions,
-        .discord-bot-actions {
+        .discord-bot-actions,
+        .flightplanner-actions {
             margin-top: 10px;
             text-align: center;
         }
         .jarvis a h3,
-        .discord-bot a h3 {
+        .discord-bot a h3,
+        .flightplanner a h3 {
             color: white;
             background-color: #007bff;
             padding: 5px 10px;
@@ -97,12 +105,14 @@
             text-decoration: none;
         }
         .jarvis a,
-        .discord-bot a {
+        .discord-bot a,
+        .flightplanner a {
             text-decoration: none;
             font-family: Arial, sans-serif;
         }
         .jarvis a h3:hover,
-        .discord-bot a h3:hover {
+        .discord-bot a h3:hover,
+        .flightplanner a h3:hover {
             background-color: #0056b3;
         }
         #dev-header {
@@ -220,6 +230,15 @@
             </div>
             <div class="discord-bot-actions">
                 <a href="https://thelecraft999.github.io/thaliumz-discord_bot"><h3>GO TO PAGE</h3></a>
+            </div>
+        </div>
+        <div class="flightplanner">
+            <div class="flightplanner-content">
+                <img class="flightplanner-image" src="assets/flightplanner.png" alt="Flightplanner-Image">
+                <p>The Flightplanner is a powerfull tool made for planning military flights. It has Openflightmaps, Skyvector and Windy implemented</p>
+            </div>
+            <div class="flightplanner-actions">
+                <a href="https://thelecraft999.github.io/flightplanner"><h3>GO TO PAGE</h3></a>
             </div>
         </div>
     </div>
